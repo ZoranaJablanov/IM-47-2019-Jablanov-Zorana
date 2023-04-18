@@ -46,6 +46,7 @@ public class SmartCalculator extends JFrame {
 	 * Create the frame.
 	 */
 	public SmartCalculator() {
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 250, 300);
 		contentPane = new JPanel();
@@ -498,15 +499,16 @@ public class SmartCalculator extends JFrame {
 		JButton btnJednako = new JButton("=");
 		btnJednako.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String answer;
-				drugiBroj = Double.parseDouble(textField.getText());
+				//String answer;
 				try {
 					if (operation == "+") {
+						drugiBroj = Double.parseDouble(textField.getText());
 						result = prviBroj + drugiBroj;
 						answer = Double.toString(result);
 						textField.setText(answer);
 					}
 					else if (operation == "-") {
+						drugiBroj = Double.parseDouble(textField.getText());
 						result= prviBroj - drugiBroj;
 						answer = Double.toString(result);
 						textField.setText(answer);	
@@ -518,15 +520,18 @@ public class SmartCalculator extends JFrame {
 													JOptionPane.ERROR_MESSAGE);				
 						}
 						else {
+							drugiBroj = Double.parseDouble(textField.getText());
 							result = prviBroj / drugiBroj;
 							answer = Double.toString(result);
 							textField.setText(answer);
 						}
 					}
 					else if (operation == "*") {
+						drugiBroj = Double.parseDouble(textField.getText());
 						result = prviBroj * drugiBroj;
-						answer = Double.toString(result);
+						answer = Double.toString(result);	
 						textField.setText(answer);
+						
 					}
 				} 
 				catch (Exception e1) {
