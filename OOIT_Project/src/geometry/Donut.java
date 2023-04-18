@@ -64,10 +64,6 @@ public class Donut extends Circle {
 		return super.contains(x,y) && this.center.distance(x, y) >= innerRadius;
 	}
 	
-	/*public boolean contains(Point p) {
-		return contains(p.getX(),p.getY());
-	}*/
-	
 	//getteri i setteri
 	public int getInnerRadius() {
 		return innerRadius;

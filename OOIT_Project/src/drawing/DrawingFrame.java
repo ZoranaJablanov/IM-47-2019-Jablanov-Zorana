@@ -50,7 +50,6 @@ public class DrawingFrame extends JFrame {
 
 	private JPanel contentPane;
 	private DrawingPanel canvas;
-	private AddDlg adddlg;
 	int brojac = 0;
 	private DefaultListModel dlm = new DefaultListModel();
 	HashMap <String,Integer> a = new HashMap <String,Integer>();
@@ -149,12 +148,7 @@ public class DrawingFrame extends JFrame {
 		
 		JPanel panel_2 = new JPanel();
 		panel_1.add(panel_2, BorderLayout.CENTER);
-		panel_2.setLayout(new BorderLayout(0, 0));
-		
-		/*JList list = new JList();
-		list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		panel_2.add(list, BorderLayout.CENTER);*/
-				
+		panel_2.setLayout(new BorderLayout(0, 0));		
 		
 		tglbtnLine.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -167,7 +161,6 @@ public class DrawingFrame extends JFrame {
 					tglbtnSelect.setSelected(false);
 					tglbtnDelete.setSelected(false);
 				}
-			
 			}
 		});
 		

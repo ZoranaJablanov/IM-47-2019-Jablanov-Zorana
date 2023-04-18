@@ -71,10 +71,6 @@ public class Point extends Shape {
 		return distance(x, y) <3;
 	}
 	
-	/*public boolean contains(Point p) {
-		return contains(p.getX(), p.getY());
-	}*/
-	
 	//getteri i setteri
 	public int getX() {
 		return x;

@@ -67,10 +67,6 @@ public class Line extends Shape {
 		return (length() - (this.startPoint.distance(x,y) + this.endPoint.distance(x,y))) <3;
 	}
 	
-	/*public boolean contains(Point p) {
-		return contains(p.getX(),p.getY());
-	}*/
-	
 	//getteri i setteri
 	public Point getStartPoint() {
 		return startPoint;

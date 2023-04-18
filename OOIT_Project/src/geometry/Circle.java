@@ -72,10 +72,6 @@ public class Circle extends Shape {
 		return (center.distance(x,y) <= radius);
 	}
 	
-	/*public boolean contains(Point p) {
-		return contains(p.getX(), p.getY());
-	}*/
-	
 	//getteri i setteri
 	public Point getCenter() {
 		return center;

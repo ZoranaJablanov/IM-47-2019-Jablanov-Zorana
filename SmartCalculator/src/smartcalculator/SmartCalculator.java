@@ -143,8 +143,8 @@ public class SmartCalculator extends JFrame {
 		contentPane.add(btnKoren, gbc_btnKoren);
 		
 		
-		JButton btnKvadrirenje = new JButton("x^2");
-		btnKvadrirenje.addActionListener(new ActionListener() {
+		JButton btnKvadriranje = new JButton("x^2");
+		btnKvadriranje.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				double kvadrat;
 				prviBroj = Double.parseDouble(textField.getText());
@@ -154,12 +154,12 @@ public class SmartCalculator extends JFrame {
 			}
 		});
 		
-		GridBagConstraints gbc_btnKvadrirenje = new GridBagConstraints();
-		gbc_btnKvadrirenje.fill = GridBagConstraints.BOTH;
-		gbc_btnKvadrirenje.insets = new Insets(0, 0, 5, 5);
-		gbc_btnKvadrirenje.gridx = 2;
-		gbc_btnKvadrirenje.gridy = 2;
-		contentPane.add(btnKvadrirenje, gbc_btnKvadrirenje);
+		GridBagConstraints gbc_btnKvadriranje = new GridBagConstraints();
+		gbc_btnKvadriranje.fill = GridBagConstraints.BOTH;
+		gbc_btnKvadriranje.insets = new Insets(0, 0, 5, 5);
+		gbc_btnKvadriranje.gridx = 2;
+		gbc_btnKvadriranje.gridy = 2;
+		contentPane.add(btnKvadriranje, gbc_btnKvadriranje);
 		
 		
 		JButton btnLogaritam = new JButton("ln");

@@ -78,10 +78,6 @@ public class Rectangle extends Shape {
 		return containsX && containsY;
 	}
 	
-	/*public boolean contains(Point p) {
-		return contains(p.getX(), p.getY());
-	}*/
-	
 	//getteri i setteri
 	public Point getUpperLeft() {
 		return upperLeft;
