@@ -499,7 +499,6 @@ public class SmartCalculator extends JFrame {
 		JButton btnJednako = new JButton("=");
 		btnJednako.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//String answer;
 				try {
 					if (operation == "+") {
 						drugiBroj = Double.parseDouble(textField.getText());
@@ -531,7 +530,6 @@ public class SmartCalculator extends JFrame {
 						result = prviBroj * drugiBroj;
 						answer = Double.toString(result);	
 						textField.setText(answer);
-						
 					}
 				} 
 				catch (Exception e1) {
